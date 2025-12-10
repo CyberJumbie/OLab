@@ -1,0 +1,213 @@
+/* ServicesStyles.css */
+
+.services-hero {
+    padding: 8rem 0 6rem;
+    background-color: var(--bg-deep);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.services-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.services-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--msm-gold);
+    margin-bottom: 1.5rem;
+}
+
+.services-headline {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .services-headline {
+        font-size: 3.5rem;
+    }
+}
+
+.services-intro {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+}
+
+/* Service Detail Sections */
+.service-detail {
+    padding: 6rem 0;
+    border-bottom: 1px solid var(--border-default);
+    scroll-margin-top: 80px;
+    /* Offset for sticky navbar */
+}
+
+.detail-headline {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.detail-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .detail-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-num {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--msm-gold);
+    margin-bottom: 0.5rem;
+}
+
+.step-header {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+/* Cards for Story Vault & Workshops */
+.offer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.offer-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.offer-card-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.offer-meta {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--msm-gold);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Newsletter Component (shared) */
+.newsletter-box {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(0, 40, 85, 0.4));
+    border: 1px solid var(--border-default);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.newsletter-title {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.newsletter-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 32rem;
+    margin: 0 auto 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    .newsletter-form {
+        flex-direction: row;
+    }
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--msm-gold);
+}
+
+.btn-subscribe {
+    padding: 0.75rem 1.5rem;
+    background: var(--msm-gold);
+    color: var(--msm-navy);
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.btn-subscribe:hover {
+    background: var(--gold-light);
+}

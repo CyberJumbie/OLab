@@ -1,0 +1,209 @@
+/* AboutStyles.css */
+/* Shared Styles for About Page Sections */
+
+.about-section {
+    padding: 6rem 0;
+    background-color: var(--bg-deep);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.about-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-label {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--msm-gold);
+    margin-bottom: 1.5rem;
+}
+
+.about-headline {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    line-height: 1.25;
+    max-width: 50rem;
+}
+
+@media (min-width: 768px) {
+    .about-headline {
+        font-size: 3rem;
+    }
+}
+
+.about-intro {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    /* xl */
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 48rem;
+    margin-bottom: 4rem;
+}
+
+/* Process Grid */
+.process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.process-step {
+    border-left: 2px solid var(--border-default);
+    padding-left: 1.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.process-step:hover {
+    border-color: var(--msm-gold);
+}
+
+.step-label {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-subtle);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.step-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.step-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Philosophy Grid */
+.phil-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .phil-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.phil-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-default);
+    border-radius: 8px;
+    padding: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.phil-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+}
+
+.phil-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.phil-text {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Entry Points */
+.entry-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .entry-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.entry-item {
+    background: transparent;
+    padding: 0;
+}
+
+.entry-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.entry-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.btn-large {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, var(--msm-gold), var(--gold-light));
+    color: var(--msm-navy);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(184, 134, 11, 0.2);
+}
+
+.entry-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--msm-gold);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+    transition: gap 0.2s ease;
+}
+
+.entry-cta:hover {
+    gap: 0.75rem;
+    color: var(--gold-light);
+}
